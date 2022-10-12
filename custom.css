@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    transition: ease-in-out;
+    font-family: pacifico;
+
+}
+@font-face {
+    font-family: pacifico;
+    src: url(/Pacifico/Pacifico-Regular.ttf);
+}
+html, body {
+    height: 100%;
+    background-color: #2b655f;
+  }
+.main{
+    padding: 1rem;
+    margin: 2rem;
+    background-color: #bdd7d9;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+}
+.logoImg {
+    width: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+}
+.versNum{
+    text-align: center;
+}
+.button{
+    cursor: pointer;
+    font-size: 2.25rem;
+    color: White;
+    background-color: black;
+    width: fit-content;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 0 2rem;
+}
+.navlist{
+    display: none;
+    color: white;
+    background-color: black;
+    justify-content: space-around;
+    font-size: 2.3rem;
+    position: fixed;
+    top: 4rem;
+    text-decoration: none;
+    right: 0;
+    padding: 0 2rem;
+}
+#nav .navlist a{
+    text-decoration: none;
+    color: inherit;
+}
+#nav .navlist.opened{
+    display: flex;
+    flex-direction: column;
+}
+
+.header .title {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 200;
+}
+.socials{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    gap:1rem;
+}
+
+/* .socials img{
+    width: 22vw;
+    min-width: 10vw;
+} */
+.sosh{
+    max-width: 15vw;
+}
+.sosh img{
+    width: 100%;
+}
+.bigbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 6vw;
+    padding: 2rem;
+}
+.bigbox img{
+    max-width: 33vw;
+}
+.bigbox .box{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    /* margin: auto; */
+    flex-direction: column;
+    gap: 1rem;
+}
+.bigbox .box h2{
+    font-size: 2rem;
+}
+
+.thing {
+    text-align: center;
+    margin: 5vh 0;
+}
+.thing h2{
+    margin-bottom:3rem;
+    font-size: 2rem;
+}
+.titleBox{
+    background-image: url('/img/ocean.cropped.jpg');
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sticky{
+    background-color: rgba(255, 255, 255, 0.572);
+}
+.sticky ul{
+    flex-direction: row !important;
+}
+.footer{
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footerLogo {
+    max-width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .footer .footerText a{
+    font-size: 4vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footerLogo .footerLogoImg{
+    width:100%;
+}
+.taylor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:415) {
+    .title-pic .titleBox .logoImg{
+        position: unset;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:950px) {
+  .bigbox img{
+      max-width: 50vw;
+  }
+  .logoImg{
+      top: 4.5rem;
+      width: 7rem;
+  }
+  .socials{
+      height: 100%;
+      flex-direction: column;
+      gap: 3rem;
+  }
+  .socials .sosh {
+      max-width: 30vw;
+  }
+  .main .socials .sosh img{
+      max-width: 30vw;
+  }
+  .main .footer .footerText a{
+      font-size: 3rem;
+  }
+
+}
+
+@media screen and (max-width:733px) {
+    .logoImg{
+        position: unset;
+        width: 28vw;
+    }
+    .titleBox{
+        align-items: center;
+    }
+    .titleBox .logo{
+        margin-top: 5.5rem;
+        font-size: 2.5rem;
+    }
+    .header .title{
+        margin-top: 4rem;
+    }
+}
