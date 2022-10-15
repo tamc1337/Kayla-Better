@@ -5,7 +5,7 @@
     list-style: none;
     transition: ease-in-out;
     font-family: pacifico;
-
+    text-align: center;
 }
 @font-face {
     font-family: pacifico;
@@ -19,6 +19,29 @@ html, body {
     padding: 1rem;
     margin: 2rem;
     background-color: #bdd7d9;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about .socials{
+    width: unset;
+}
+.about .aboutCaption{
+    color: rgb(66, 92, 12);
+    text-align: center;
+}
+.about .aboutBlurb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.65rem;
+    align-items: center;
+}
+#oceanimage{
+    max-width: 100%;
 }
 
 .logo {
@@ -84,10 +107,9 @@ html, body {
     gap:1rem;
 }
 
-/* .socials img{
-    width: 22vw;
-    min-width: 10vw;
-} */
+.paintingsBox .bigbox{
+    gap: 3rem;
+}
 .sosh{
     max-width: 15vw;
 }
@@ -153,17 +175,22 @@ html, body {
     align-items: center;
     justify-content: center;
 }
-.main .footer .footerText a{
-    font-size: 4vw;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 .footerLogo .footerLogoImg{
     width:100%;
+}
+.footer .footerText a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: inherit;
 }
 .taylor{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.taylor h4{
+    font-family: monospace !important;
 }
 
 @media screen and (max-width:415) {
@@ -192,9 +219,6 @@ html, body {
   .main .socials .sosh img{
       max-width: 30vw;
   }
-  .main .footer .footerText a{
-      font-size: 3rem;
-  }
 
 }
 
@@ -212,5 +236,28 @@ html, body {
     }
     .header .title{
         margin-top: 4rem;
+    }
+}
+@media screen and (max-width:433px) {
+    .main{
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .button{
+        font-size: 1.35rem;
+        padding:0 1rem;
+    }
+    #nav .navlist{
+        font-size: 1.7rem;
+        top:2.4rem;
+    }
+    .title{
+        padding: 2rem 0;
+    }
+    .bigbox{
+        padding: 0;
+    }
+    #oceanimage{
+        max-width: 130%;
     }
 }
