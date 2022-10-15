@@ -25,7 +25,8 @@ html, body {
     flex-direction: column;
     align-items: center;
 }
-.about .socials{
+.about .socials,
+.digisocials .socials{
     width: unset;
 }
 .about .aboutCaption{
